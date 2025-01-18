@@ -1,0 +1,22 @@
+# Conda environment
+.conda/
+*.conda
+
+# Python egg metadata
+*.egg-info/
+*.egg
+
+# pytest cache
+.pytest_cache/
+
+# Other Python-related ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+*.env
+
