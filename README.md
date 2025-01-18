@@ -24,7 +24,8 @@ Final_assignment/
 ├── src/                       # Source code
 │   ├── __init__.py            # Makes src a package
 │   ├── data_preprocessing.py  # Data cleaning and feature engineering
-│   ├── recommendation.py      # Recommendation functions
+│   ├── recommendation_unvisited.py      # Recommendation functions
+│   ├── recommendation_point.py      # Recommendation functions
 │   ├── similarity.py          # Similarity computations
 │   ├── visualization.py       # Folium visualization
 │   └── utils.py               # Helper utilities

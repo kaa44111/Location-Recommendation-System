@@ -3,22 +3,24 @@ from src.data_preprocessing import load_data, preprocess_data, feature_engineeri
 from src.similarity import compute_user_profile, compute_user_similarity, find_top_similar_users
 from src.recommendation_unvisisted import recommend_similar_category_locations
 from src.recommendation_point import recommend_meeting_place_random_checkins
-from src.visualization import visualize_random_checkins_and_venues
-
+from src.utils import save_to_csv
 
 # Main function to run all computations
 def main():
     # Step 1: Load Data
-    filepath = "data/dataset_NYC.txt"
+    filepath = "data/dataset_NYC.zip"
     print("Loading data...")
     data = load_data(filepath)
 
     # Step 2: Preprocess and Feature Engineer
     #print("Preprocessing data...")
     data = preprocess_data(data)
-    categories_path= "data/categories.csv"
+    categories_path= "data/categories.zip"
     #print("Feature engineering...")
     data = feature_engineering(data,categories_path)
+    
+    #Save for future use
+    #save_to_csv(data, "data/processed_data.csv")
 
     # Step 3: Compute User Profiles
     #print("Computing user profiles...")
@@ -58,4 +60,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

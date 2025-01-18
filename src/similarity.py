@@ -66,3 +66,13 @@ def find_top_similar_users(user_id, user_similarity_df, top_n=10):
     # Sort similar users by similarity score, excluding the user themselves
     similar_users = user_similarity_df.loc[user_id].sort_values(ascending=False).iloc[1:top_n + 1]
     return similar_users
+
+if __name__ == "__main__":
+    # Load the preprocessed data
+    data = pd.read_csv("data/processed_data.csv", sep="\t", encoding="ISO-8859-1")
+
+    # Precompute user similarity matrix
+    user_data = compute_user_profile(data)
+    user_similarity_df = compute_user_similarity(user_data)
+
+    print(user_similarity_df)

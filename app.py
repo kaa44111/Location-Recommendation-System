@@ -6,7 +6,7 @@ from src.recommendation_unvisisted import recommend_similar_category_locations
 from src.similarity import compute_user_profile, compute_user_similarity, find_top_similar_users
 
 # Load and preprocess data (cached for performance)
-@st.cache
+@st.cache_data
 def load_and_prepare_data():
     raw_data = load_data("data/dataset_NYC.txt")
     cleaned_data = preprocess_data(raw_data)
@@ -31,7 +31,7 @@ def main():
 
     if option == "Recommend Unvisited Locations":
         st.header("Recommend Unvisited Locations")
-        user_id = st.text_input("Enter User ID (e.g., U1):", "U1")
+        user_id = st.text_input("Enter User ID (e.g., 20):", "20")
         category_name = st.text_input("Enter Category Name (e.g., Bar):", "Bar")
         top_k = st.slider("Number of Recommendations:", 1, 20, 10)
 
@@ -42,7 +42,7 @@ def main():
 
     elif option == "Find Similar Users":
         st.header("Find Similar Users")
-        user_id = st.text_input("Enter User ID (e.g., U1):", "U1")
+        user_id = st.text_input("Enter User ID (e.g., 20):", "20")
         top_n = st.slider("Number of Similar Users:", 1, 20, 10)
 
         if st.button("Find Similar Users"):
@@ -56,9 +56,9 @@ def main():
         user_ids = [uid.strip() for uid in user_ids.split(",")]
 
         if st.button("Get Meeting Place"):
-            meeting_place = recommend_meeting_place_random_checkins(user_ids, processed_data, k=1)
+            selected_checkins, nearest_venues = recommend_meeting_place_random_checkins(user_ids, processed_data, k=1)
             st.write("Recommended Meeting Place:")
-            st.dataframe(meeting_place)
+            st.dataframe(nearest_venues)
 
 # Run the app
 if __name__ == "__main__":
