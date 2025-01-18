@@ -1,0 +1,90 @@
+==> 2025-01-17 17:02:13 <==
+# cmd: /opt/anaconda3/bin/conda create -p /Users/amina/Desktop/Studium/WiSe24/Datascience/Final_assignment/.conda python=3.9
+# conda version: 24.11.3
++defaults/noarch::tzdata-2024b-h04d1e81_0
++defaults/osx-arm64::ca-certificates-2024.12.31-hca03da5_0
++defaults/osx-arm64::libcxx-14.0.6-h848a8c0_0
++defaults/osx-arm64::libffi-3.4.4-hca03da5_1
++defaults/osx-arm64::ncurses-6.4-h313beb8_0
++defaults/osx-arm64::openssl-3.0.15-h80987f9_0
++defaults/osx-arm64::pip-24.2-py39hca03da5_0
++defaults/osx-arm64::python-3.9.21-hb885b13_1
++defaults/osx-arm64::readline-8.2-h1a28f6b_0
++defaults/osx-arm64::setuptools-75.1.0-py39hca03da5_0
++defaults/osx-arm64::sqlite-3.45.3-h80987f9_0
++defaults/osx-arm64::tk-8.6.14-h6ba3021_0
++defaults/osx-arm64::wheel-0.44.0-py39hca03da5_0
++defaults/osx-arm64::xz-5.4.6-h80987f9_1
++defaults/osx-arm64::zlib-1.2.13-h18a0788_1
+# update specs: ['python=3.9']
+==> 2025-01-17 17:02:53 <==
+# cmd: /opt/anaconda3/bin/conda install -p /Users/amina/Desktop/Studium/WiSe24/Datascience/Final_assignment/.conda numpy pandas scikit-learn matplotlib
+# conda version: 24.11.3
++defaults/noarch::cycler-0.11.0-pyhd3eb1b0_0
++defaults/noarch::pybind11-abi-4-hd3eb1b0_1
++defaults/noarch::python-tzdata-2023.3-pyhd3eb1b0_0
++defaults/noarch::six-1.16.0-pyhd3eb1b0_1
++defaults/osx-arm64::blas-1.0-openblas
++defaults/osx-arm64::bottleneck-1.4.2-py39hbda83bc_0
++defaults/osx-arm64::brotli-python-1.0.9-py39h313beb8_9
++defaults/osx-arm64::contourpy-1.2.0-py39h48ca7d4_0
++defaults/osx-arm64::fonttools-4.55.3-py39h80987f9_0
++defaults/osx-arm64::freetype-2.12.1-h1192e45_0
++defaults/osx-arm64::importlib_resources-6.4.0-py39hca03da5_0
++defaults/osx-arm64::joblib-1.4.2-py39hca03da5_0
++defaults/osx-arm64::jpeg-9e-h80987f9_3
++defaults/osx-arm64::kiwisolver-1.4.4-py39h313beb8_0
++defaults/osx-arm64::lcms2-2.16-he93ba84_0
++defaults/osx-arm64::lerc-4.0.0-h313beb8_0
++defaults/osx-arm64::libdeflate-1.22-h80987f9_0
++defaults/osx-arm64::libgfortran-5.0.0-11_3_0_hca03da5_28
++defaults/osx-arm64::libgfortran5-11.3.0-h009349e_28
++defaults/osx-arm64::libopenblas-0.3.21-h269037a_0
++defaults/osx-arm64::libpng-1.6.39-h80987f9_0
++defaults/osx-arm64::libtiff-4.5.1-hc9ead59_1
++defaults/osx-arm64::libwebp-base-1.3.2-h80987f9_1
++defaults/osx-arm64::llvm-openmp-14.0.6-hc6e5704_0
++defaults/osx-arm64::lz4-c-1.9.4-h313beb8_1
++defaults/osx-arm64::matplotlib-3.9.2-py39hca03da5_1
++defaults/osx-arm64::matplotlib-base-3.9.2-py39h7ef442a_1
++defaults/osx-arm64::numexpr-2.10.1-py39h5d9532f_0
++defaults/osx-arm64::numpy-1.26.4-py39h3b2db8e_0
++defaults/osx-arm64::numpy-base-1.26.4-py39ha9811e2_0
++defaults/osx-arm64::openjpeg-2.5.2-h54b8e55_0
++defaults/osx-arm64::packaging-24.2-py39hca03da5_0
++defaults/osx-arm64::pandas-2.2.3-py39hcf29cfe_0
++defaults/osx-arm64::pillow-11.0.0-py39h84e58ab_1
++defaults/osx-arm64::pyparsing-3.2.0-py39hca03da5_0
++defaults/osx-arm64::python-dateutil-2.9.0post0-py39hca03da5_2
++defaults/osx-arm64::pytz-2024.1-py39hca03da5_0
++defaults/osx-arm64::scikit-learn-1.5.2-py39h313beb8_0
++defaults/osx-arm64::scipy-1.13.1-py39hd336fd7_1
++defaults/osx-arm64::threadpoolctl-3.5.0-py39h33ce5c2_0
++defaults/osx-arm64::tornado-6.4.2-py39h80987f9_0
++defaults/osx-arm64::unicodedata2-15.1.0-py39h80987f9_1
++defaults/osx-arm64::zipp-3.21.0-py39hca03da5_0
++defaults/osx-arm64::zstd-1.5.6-hfb09047_0
+# update specs: ['matplotlib', 'numpy', 'pandas', 'scikit-learn']
+==> 2025-01-17 17:11:06 <==
+# cmd: /opt/anaconda3/bin/conda remove -p /Users/amina/Desktop/Studium/WiSe24/Datascience/Final_assignment/.conda scikit-learn
+# conda version: 24.11.3
+-defaults/noarch::pybind11-abi-4-hd3eb1b0_1
+-defaults/osx-arm64::joblib-1.4.2-py39hca03da5_0
+-defaults/osx-arm64::scikit-learn-1.5.2-py39h313beb8_0
+-defaults/osx-arm64::scipy-1.13.1-py39hd336fd7_1
+-defaults/osx-arm64::threadpoolctl-3.5.0-py39h33ce5c2_0
+# remove specs: ['scikit-learn']
+==> 2025-01-17 17:11:23 <==
+# cmd: /opt/anaconda3/bin/conda install anaconda::scikit-learn
+# conda version: 24.11.3
++anaconda/osx-arm64::scikit-learn-1.5.2-py39h313beb8_0
++defaults/noarch::pybind11-abi-4-hd3eb1b0_1
++defaults/osx-arm64::joblib-1.4.2-py39hca03da5_0
++defaults/osx-arm64::scipy-1.13.1-py39hd336fd7_1
++defaults/osx-arm64::threadpoolctl-3.5.0-py39h33ce5c2_0
+# update specs: ['anaconda::scikit-learn']
+==> 2025-01-17 17:15:19 <==
+# cmd: /opt/anaconda3/bin/conda install --yes --json --force-reinstall --prefix /Users/amina/Desktop/Studium/WiSe24/Datascience/Final_assignment/.conda seaborn
+# conda version: 24.11.3
++defaults/osx-arm64::seaborn-0.13.2-py39hca03da5_0
+# update specs: ['seaborn']

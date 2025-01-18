@@ -1,0 +1,17 @@
+setup.py
+FinalAssignment.egg-info/PKG-INFO
+FinalAssignment.egg-info/SOURCES.txt
+FinalAssignment.egg-info/dependency_links.txt
+FinalAssignment.egg-info/requires.txt
+FinalAssignment.egg-info/top_level.txt
+src/__init__.py
+src/data_preprocessing.py
+src/recommendation_point.py
+src/recommendation_unvisisted.py
+src/similarity.py
+src/utils.py
+src/visualization.py
+tests/test_data_preprocessing.py
+tests/test_recommendation.py
+tests/test_similarity.py
+tests/test_visualization.py
